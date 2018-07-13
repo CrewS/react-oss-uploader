@@ -1,19 +1,10 @@
 
 import OSS from './aliyun-oss-sdk';
-/*
-option {
-  config:{
-
-  },// oss key json
-  file, // file
-  process,// function
-  dirname, // dirname
-}
-*/
+// import OSS from 'ali-oss';
 class ossupload {
   constructor(option) {
     this.file = option.file;
-    this.dirname = option.dirname;
+    this.dirname = option.dirname || '';
     this.config = option.config;
     this.progress = option.progress;
     this.client = null;

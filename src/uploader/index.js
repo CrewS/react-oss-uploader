@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ossupload from './ossupload';
-// import logo from './logo.svg';
 import './index.css';
 
 class Uploader extends Component {
@@ -15,21 +14,15 @@ class Uploader extends Component {
     this.getSettings();
   }
   getSettings = () => {
-    // 补充 options获取
-    // accessid= '6MKOqxGiGU4AUk44';
-    // accesskey= 'ufu7nS8kS59awNihtjSonMETLI0KLy';
-    // host = 'http://post-test.oss-cn-hangzhou.aliyuncs.com';
-    // http://post-test.oss-cn-hangzhou.aliyuncs.com/Tkjt4zpKBb.docx
     const options = {
       config: {
-        region: 'oss-cn-shenzhen',
-        accessKeyId: 'STS.NHs8C9Pmngk8RzED4PVUoEipo',
-        accessKeySecret: '679PDfvZFR553RadVMLdMbwrqoHF5Q4H7DiPzbVw281f',
-        stsToken: 'CAISgAJ1q6Ft5B2yfSjIr4vGc/mNvbJP0KnTUFz0oDQFWtpDqqzbjTz2IHpFf3JtBOkfs/42lGtR6PYelq92TJVEQUGc2XWYTjQTo22beIPkl5Gfz95t0e+IewW6Dxr8w7WhAYHQR8/cffGAck3NkjQJr5LxaTSlWS7OU/TL8+kFCO4aRQ6ldzFLKc5LLw950q8gOGDWKOymP2yB4AOSLjIx5Vol2D4vufvkm5PNukKHtjCglL9J/baWC4O/csxhMK14V9qIx+FsfsLDqnUKukMRqfov1fEeoGec54/NX0Mi6hGHIvfS9cZ0MAh6a641FqhJtvHgkudivejeh2VgLfPPwBw+GoABoYqjwITiJsW0QcvLRgvwoBvgjn72ORx9nF3HC9S5HAFs0Xop3SghxgoA27NeyJ0M3YL1E7ek0w1l8KCo1a6JlUJrABXuMK+BChXdYTn4dua41Z093S6xfqhgGHHQjTDPLGi7Myys69r1NfbN5uUuMj1xZysrfQaFaU9UIORssB8=',
-        bucket: 'e-ducation',
+        region: '<Your region>',
+        accessKeyId: '<Your AccessKeyId>',
+        accessKeySecret: '<Your AccessKeySecret>',
+        stsToken: '<Your stsToken>',
+        bucket: 'Your bucket name',
       },
-      dirname: 'dev/lms/800005127/'
-      // stsToken: options.stsToken,
+      dirname: ''
     }
     this.setState({
       options,
