@@ -20,7 +20,7 @@ config: {
   bucket: 'Your bucket name',
 }
 ```
-### 上传
+### 上传
 - 点击上传按钮
 - 选择文件
 - 点击开始上传
